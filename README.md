@@ -1,2 +1,1 @@
-# HBD
-# ทำให้ทุกคนที่เป็นวันเกิดเพื่อนเรา
+# https://birthdaytoyou.netlify.app
