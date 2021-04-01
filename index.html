@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,40 +7,55 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/x-icon" href="./image/H.png">
-    <title>H.B.D</title>
+    <title>🎂H.B.D🎂</title>
     <meta name="google-site-verification" content="GWDmEE_DQ39V4NN_kw449vp6tvF4tD3ao1BV0Qq_FVI" />
 </head>
 
 <body>
+    <div class="container">
 
-    <div class="container-1">
-        <h1 style="font-family:Impact, Charcoal, sans-serif;color: #000;"> Happy birthday to you</h1>
-        <h5 style="font-family:Impact, Charcoal, sans-serif;color: #000;"> I hope you will be very happy to do it for
-            you.</h5>
-        <h5 style="font-family:Impact, Charcoal, sans-serif;color: #000;"> May this birthday be the beginning of the
-            best years of your life. </h5>
+        <section>
+            <h1> Happy birthday to you 🐶</h1>
 
+            <img src="/image/lighted-candles-on-white-icing-covered-cake-1729808.jpg" alt="server graphic"
+                class="server">
 
-        <div class="flex-box-container-1">
-            <div>
-                <img src="/image/lighted-candles-on-white-icing-covered-cake-1729808.jpg" alt=" ">
-            </div>
-        </div>
+            <img src="/image/pexels-kaboompics-com-6203.jpg" alt="server graphic" class="server">
+
+            <img src="/image/pexels-jill-wellington-433527.jpg" alt="server graphic" class="server">
+
+            <p class="subhead"> I hope you will be very happy to do it for
+                you.
+            </p>
+            <p class="subhead"> May this birthday be the beginning of the
+                best years of your life. </p>
+            <p class="subhead"> 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 </p>
+        </section>
     </div>
-
-
-    <div class="container-2">
-        <div class="flex-box-container-2">
-            <div class="flex-sound-1">
-                <audio src="/sound/Untitled.wav" autoplay loop controls  type="audio/mp3">
-                    <source src="sound/Untitled.wav" type="audio/mp3">
-                </audio>
-            </div>
+    <div class="container">
+        <div class="flex-sound">
+            <audio src="/sound/Untitled.wav" autoplay loop controls type="audio/mp3">
+                <source src="sound/Untitled.wav" type="audio/mp3">
+            </audio>
         </div>
     </div>
 </body>
 
 <script type="text/javascript">
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("server");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
     var bits = 80; // how many bits
     var speed = 33; // how fast - smaller is faster
     var bangs = 5; // how many can be launched simultaneously (note that using too many can slow the script down)
@@ -172,7 +188,7 @@
                 else if (M < 2 * colours.length) Z.style.color = colours[colour[N]];
                 else Z.style.color = colours[i % colours.length];
                 Z.style.fontSize = "13px";
-                Z.style.visibility = "visible";
+                Z.style.visibility = "visisble";
             }
             bang(N);
             launch(N);
@@ -205,6 +221,8 @@
         swide = sw_min;
         shigh = sh_min;
     }
+
+
 </script>
 
 </html>
